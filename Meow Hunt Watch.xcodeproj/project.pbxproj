@@ -17,6 +17,8 @@
 		69AEE2DA2881100E0089BA09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2D92881100E0089BA09 /* Preview Assets.xcassets */; };
 		98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB128867EA5006C7313 /* IndoorActivityView.swift */; };
 		98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */; };
+		98D29BB828871F15006C7313 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB728871F15006C7313 /* TimerView.swift */; };
+		98D29BBC288721AD006C7313 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BBB288721AD006C7313 /* CircleProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		69AEE2DB2881100E0089BA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D29BB128867EA5006C7313 /* IndoorActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorActivityView.swift; sourceTree = "<group>"; };
 		98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorActivityView.swift; sourceTree = "<group>"; };
+		98D29BB728871F15006C7313 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		98D29BBB288721AD006C7313 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				69AEE2D02881100D0089BA09 /* ContentView.swift */,
 				98D29BB128867EA5006C7313 /* IndoorActivityView.swift */,
 				98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */,
+				98D29BB728871F15006C7313 /* TimerView.swift */,
+				98D29BBB288721AD006C7313 /* CircleProgressView.swift */,
 				69AEE2D22881100D0089BA09 /* Meow_Hunt_WatchApp.swift */,
 				69AEE2D42881100D0089BA09 /* ComplicationController.swift */,
 				69AEE2D62881100E0089BA09 /* Assets.xcassets */,
@@ -264,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D29BB828871F15006C7313 /* TimerView.swift in Sources */,
 				98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */,
 				69AEE2D32881100D0089BA09 /* Meow_Hunt_WatchApp.swift in Sources */,
+				98D29BBC288721AD006C7313 /* CircleProgressView.swift in Sources */,
 				98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */,
 				69AEE2D12881100D0089BA09 /* ContentView.swift in Sources */,
 				69AEE2D52881100D0089BA09 /* ComplicationController.swift in Sources */,

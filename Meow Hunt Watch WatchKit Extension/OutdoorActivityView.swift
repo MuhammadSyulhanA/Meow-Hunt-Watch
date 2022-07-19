@@ -7,39 +7,38 @@
 
 import SwiftUI
 
+struct OutdoorActivity: Identifiable {
+    var id = UUID()
+    var iconList: String
+    var activityList: String
+}
+
 struct OutdoorActivityView: View {
+    var dataList = [
+        OutdoorActivity(iconList: "playingIcon", activityList: "Play Games"),
+        OutdoorActivity(iconList: "parkIcon", activityList: "Going to Park"),
+        OutdoorActivity(iconList: "gardenIcon", activityList: "Gardening"),
+        OutdoorActivity(iconList: "outdoorPicnicIcon", activityList: "Outdoor Picnic"),
+        OutdoorActivity(iconList: "picnicIcon", activityList: "Draw With Chalk"),
+        OutdoorActivity(iconList: "bookIcon", activityList: "Paint With Water"),
+        OutdoorActivity(iconList: "bookIcon", activityList: "Scavenger Hunt"),
+        OutdoorActivity(iconList: "bookIcon", activityList: "Hunt For Bugs"),
+        OutdoorActivity(iconList: "bookIcon", activityList: "Water Fights"),
+        OutdoorActivity(iconList: "bookIcon", activityList: "Play Tags"),
+        OutdoorActivity(iconList: "bookIcon", activityList: "Wash Car"),
+        OutdoorActivity(iconList: "bookIcon", activityList: "Other Activity")]
+    
     var body: some View {
         NavigationView {
             HStack {
-                List {
+                List(dataList){ i in{
                     HStack{
-                        Image("playingIcon")
+                        Image(i.iconList)
                             .resizable()
                             .frame(width: 40, height: 40)
-                        Text("Play games")
+                        Text(i.activityList)
                     }
-                    
-                    HStack{
-                        Image("parkIcon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                        Text("Going to park")
-                    }
-                    
-                    HStack{
-                        Image("gardenIcon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                        Text("Gardening")
-                    }
-                    
-                    HStack{
-                        Image("outdoorPicnicIcon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                        Text("Outdoor Picnic")
-                    }
-                    
+                }()
                 }
                 .navigationBarTitle("Outdoor")
                 .navigationBarHidden(true)
@@ -47,6 +46,7 @@ struct OutdoorActivityView: View {
         }
     }
 }
+
 
 struct OutdoorActivityView_Previews: PreviewProvider {
     static var previews: some View {
