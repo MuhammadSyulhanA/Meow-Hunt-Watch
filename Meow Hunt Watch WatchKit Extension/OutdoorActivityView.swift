@@ -13,28 +13,28 @@ struct OutdoorActivityView: View {
             HStack {
                 List {
                     HStack{
-                        Image("sleepCat")
+                        Image("playingIcon")
                             .resizable()
                             .frame(width: 40, height: 40)
                         Text("Play games")
                     }
                     
                     HStack{
-                        Image("sleepCat")
+                        Image("parkIcon")
                             .resizable()
                             .frame(width: 40, height: 40)
                         Text("Going to park")
                     }
                     
                     HStack{
-                        Image("sleepCat")
+                        Image("gardenIcon")
                             .resizable()
                             .frame(width: 40, height: 40)
                         Text("Gardening")
                     }
                     
                     HStack{
-                        Image("sleepCat")
+                        Image("outdoorPicnicIcon")
                             .resizable()
                             .frame(width: 40, height: 40)
                         Text("Outdoor Picnic")
