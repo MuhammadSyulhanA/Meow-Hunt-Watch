@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  ListActivityView.swift
 //  Meow Hunt Watch WatchKit Extension
 //
-//  Created by M. Syulhan Al Ghofany on 15/07/22.
+//  Created by Ferry Julian on 19/07/22.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListActivityView: View {
     var body: some View {
         NavigationView {
             HStack {
@@ -33,8 +33,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ListActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ListActivityView()
     }
 }

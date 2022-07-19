@@ -15,6 +15,8 @@
 		69AEE2D52881100D0089BA09 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEE2D42881100D0089BA09 /* ComplicationController.swift */; };
 		69AEE2D72881100E0089BA09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2D62881100E0089BA09 /* Assets.xcassets */; };
 		69AEE2DA2881100E0089BA09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2D92881100E0089BA09 /* Preview Assets.xcassets */; };
+		98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB128867EA5006C7313 /* IndoorActivityView.swift */; };
+		98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		69AEE2D62881100E0089BA09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69AEE2D92881100E0089BA09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69AEE2DB2881100E0089BA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D29BB128867EA5006C7313 /* IndoorActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorActivityView.swift; sourceTree = "<group>"; };
+		98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				69AEE2D02881100D0089BA09 /* ContentView.swift */,
+				98D29BB128867EA5006C7313 /* IndoorActivityView.swift */,
+				98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */,
 				69AEE2D22881100D0089BA09 /* Meow_Hunt_WatchApp.swift */,
 				69AEE2D42881100D0089BA09 /* ComplicationController.swift */,
 				69AEE2D62881100E0089BA09 /* Assets.xcassets */,
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */,
 				69AEE2D32881100D0089BA09 /* Meow_Hunt_WatchApp.swift in Sources */,
+				98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */,
 				69AEE2D12881100D0089BA09 /* ContentView.swift in Sources */,
 				69AEE2D52881100D0089BA09 /* ComplicationController.swift in Sources */,
 			);
