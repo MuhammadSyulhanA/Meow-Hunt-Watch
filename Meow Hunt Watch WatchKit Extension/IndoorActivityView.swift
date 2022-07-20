@@ -20,12 +20,12 @@ struct IndoorActivityView: View {
         IndoorActivity(iconList: "paintingIcon", activityList: "Colouring/Painting"),
         IndoorActivity(iconList: "cookIcon", activityList: "Bake and Cook"),
         IndoorActivity(iconList: "picnicIcon", activityList: "Indoor Picnic"),
-        IndoorActivity(iconList: "bookIcon", activityList: "Jigsaw Puzzle"),
-        IndoorActivity(iconList: "bookIcon", activityList: "Write A Letter"),
-        IndoorActivity(iconList: "bookIcon", activityList: "Word Games"),
-        IndoorActivity(iconList: "bookIcon", activityList: "Sensory Bin"),
-        IndoorActivity(iconList: "bookIcon", activityList: "Face Painting"),
-        IndoorActivity(iconList: "bookIcon", activityList: "Other Activity")]
+        IndoorActivity(iconList: "puzzleIcon", activityList: "Jigsaw Puzzle"),
+        IndoorActivity(iconList: "writeIcon", activityList: "Write A Letter"),
+        IndoorActivity(iconList: "wordIcon", activityList: "Word Games"),
+        IndoorActivity(iconList: "sensoryIcon", activityList: "Sensory Bin"),
+        IndoorActivity(iconList: "facePaintingIcon", activityList: "Face Painting"),
+        IndoorActivity(iconList: "other2Icon", activityList: "Other Activity")]
     
     var body: some View {
         NavigationView {
