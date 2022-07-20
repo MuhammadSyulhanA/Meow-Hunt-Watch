@@ -14,22 +14,19 @@ struct OutdoorActivity: Identifiable {
 }
 
 struct OutdoorActivityView: View {
-    
-    var dataList =
-    [
+    var dataList = [
         OutdoorActivity(iconList: "playingIcon", activityList: "Play Games"),
         OutdoorActivity(iconList: "parkIcon", activityList: "Going to Park"),
         OutdoorActivity(iconList: "gardenIcon", activityList: "Gardening"),
         OutdoorActivity(iconList: "outdoorPicnicIcon", activityList: "Outdoor Picnic"),
-        OutdoorActivity(iconList: "picnicIcon", activityList: "Draw With Chalk"),
-        OutdoorActivity(iconList: "bookIcon", activityList: "Paint With Water"),
-        OutdoorActivity(iconList: "bookIcon", activityList: "Scavenger Hunt"),
-        OutdoorActivity(iconList: "bookIcon", activityList: "Hunt For Bugs"),
-        OutdoorActivity(iconList: "bookIcon", activityList: "Water Fights"),
-        OutdoorActivity(iconList: "bookIcon", activityList: "Play Tags"),
-        OutdoorActivity(iconList: "bookIcon", activityList: "Wash Car"),
-        OutdoorActivity(iconList: "bookIcon", activityList: "Other Activity")
-    ]
+        OutdoorActivity(iconList: "drawingIcon", activityList: "Draw With Chalk"),
+        OutdoorActivity(iconList: "waterPaintingIcon", activityList: "Water Painting"),
+        OutdoorActivity(iconList: "scavengerIcon", activityList: "Scavenger Hunt"),
+        OutdoorActivity(iconList: "bugsIcon", activityList: "Bugs Hunter"),
+        OutdoorActivity(iconList: "waterFightIcon", activityList: "Water Fights"),
+        OutdoorActivity(iconList: "playingTagsIcon", activityList: "Play Tags"),
+        OutdoorActivity(iconList: "washCarIcon", activityList: "Wash Car"),
+        OutdoorActivity(iconList: "other2Icon", activityList: "Other Activity")]
     
     var body: some View {
         NavigationView {
