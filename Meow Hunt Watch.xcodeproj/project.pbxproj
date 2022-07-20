@@ -121,6 +121,7 @@
 		69AEE2CF2881100D0089BA09 /* Meow Hunt Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				69AEE2EB288740C60089BA09 /* View */,
 				69AEE2D02881100D0089BA09 /* ContentView.swift */,
 				98D29BB128867EA5006C7313 /* IndoorActivityView.swift */,
 				98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */,
@@ -141,6 +142,13 @@
 				69AEE2D92881100E0089BA09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69AEE2EB288740C60089BA09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
