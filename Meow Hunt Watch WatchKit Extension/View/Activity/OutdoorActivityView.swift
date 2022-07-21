@@ -13,18 +13,16 @@ struct OutdoorActivityView: View {
     
     
     var dataList = [
-        OutdoorActivity(iconList: "playingIcon", activityList: "Play Games"),
         OutdoorActivity(iconList: "parkIcon", activityList: "Going to Park"),
         OutdoorActivity(iconList: "gardenIcon", activityList: "Gardening"),
-        OutdoorActivity(iconList: "outdoorPicnicIcon", activityList: "Outdoor Picnic"),
+        OutdoorActivity(iconList: "picnicIcon", activityList: "Outdoor Picnic"),
         OutdoorActivity(iconList: "drawingIcon", activityList: "Draw With Chalk"),
-        OutdoorActivity(iconList: "waterPaintingIcon", activityList: "Water Painting"),
         OutdoorActivity(iconList: "scavengerIcon", activityList: "Scavenger Hunt"),
         OutdoorActivity(iconList: "bugsIcon", activityList: "Bugs Hunter"),
         OutdoorActivity(iconList: "waterFightIcon", activityList: "Water Fights"),
         OutdoorActivity(iconList: "playingTagsIcon", activityList: "Play Tags"),
         OutdoorActivity(iconList: "washCarIcon", activityList: "Wash Car"),
-        OutdoorActivity(iconList: "other2Icon", activityList: "Other Activity")]
+        OutdoorActivity(iconList: "otherIcon", activityList: "Other Activity")]
     
     var body: some View {
             HStack {
