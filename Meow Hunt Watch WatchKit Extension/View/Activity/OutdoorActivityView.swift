@@ -27,7 +27,6 @@ struct OutdoorActivityView: View {
         OutdoorActivity(iconList: "other2Icon", activityList: "Other Activity")]
     
     var body: some View {
-        NavigationView {
             HStack {
                 List(dataList){ i in{
                     HStack{
@@ -43,14 +42,13 @@ struct OutdoorActivityView: View {
                 }()
                 }
                 .navigationBarTitle("Outdoor")
-                .navigationBarHidden(true)
             }
             .background(
                 NavigationLink(destination: CircleProgressView(playingActivityOut: $playActivity, playingActivityIn: .constant(nil)), isActive: $isActivity, label: {
                     
                 })
             )
-        }
+        
     }
 }
 
