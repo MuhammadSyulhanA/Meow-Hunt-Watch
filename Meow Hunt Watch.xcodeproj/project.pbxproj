@@ -13,6 +13,8 @@
 		690370752888C9AA004F939A /* PlayTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370742888C9AA004F939A /* PlayTimeView.swift */; };
 		690370772888D2F4004F939A /* ParentPlayTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370762888D2F4004F939A /* ParentPlayTimeView.swift */; };
 		6903707A2888D64C004F939A /* PickTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370792888D64C004F939A /* PickTimeView.swift */; };
+		694689C72889B89800D136B9 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694689C62889B89800D136B9 /* PersistentController.swift */; };
+		694689C82889BE3000D136B9 /* DataHunter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 694689C22889B81C00D136B9 /* DataHunter.xcdatamodeld */; };
 		6986474A2887CC240078DDA8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698647492887CC240078DDA8 /* OnboardingView.swift */; };
 		6986474E288847990078DDA8 /* PlayTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986474D288847990078DDA8 /* PlayTrackView.swift */; };
 		6986475128886A340078DDA8 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986475028886A340078DDA8 /* HistoryView.swift */; };
@@ -80,6 +82,8 @@
 		690370742888C9AA004F939A /* PlayTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTimeView.swift; sourceTree = "<group>"; };
 		690370762888D2F4004F939A /* ParentPlayTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPlayTimeView.swift; sourceTree = "<group>"; };
 		690370792888D64C004F939A /* PickTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickTimeView.swift; sourceTree = "<group>"; };
+		694689C32889B81C00D136B9 /* DataHunter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataHunter.xcdatamodel; sourceTree = "<group>"; };
+		694689C62889B89800D136B9 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
 		698647492887CC240078DDA8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		6986474D288847990078DDA8 /* PlayTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTrackView.swift; sourceTree = "<group>"; };
 		6986475028886A340078DDA8 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				698647472887C87E0078DDA8 /* Model */,
 				69AEE2EB288740C60089BA09 /* View */,
 				69AEE2D22881100D0089BA09 /* Meow_Hunt_WatchApp.swift */,
+				694689C22889B81C00D136B9 /* DataHunter.xcdatamodeld */,
+				694689C62889B89800D136B9 /* PersistentController.swift */,
 				69AEE2D42881100D0089BA09 /* ComplicationController.swift */,
 				69AEE2D62881100E0089BA09 /* Assets.xcassets */,
 				69AEE2DB2881100E0089BA09 /* Info.plist */,
@@ -351,11 +357,13 @@
 				98D29BB828871F15006C7313 /* TimerView.swift in Sources */,
 				98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */,
 				69AEE2D32881100D0089BA09 /* Meow_Hunt_WatchApp.swift in Sources */,
+				694689C82889BE3000D136B9 /* DataHunter.xcdatamodeld in Sources */,
 				690370752888C9AA004F939A /* PlayTimeView.swift in Sources */,
 				6986474E288847990078DDA8 /* PlayTrackView.swift in Sources */,
 				690370712888A08C004F939A /* IndoorActivity.swift in Sources */,
 				98D29BBC288721AD006C7313 /* CircleProgressView.swift in Sources */,
 				6903706E28887E75004F939A /* StopwatchManager.swift in Sources */,
+				694689C72889B89800D136B9 /* PersistentController.swift in Sources */,
 				6986475328886CEB0078DDA8 /* ChangeGoalView.swift in Sources */,
 				98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */,
 				6986474A2887CC240078DDA8 /* OnboardingView.swift in Sources */,
@@ -676,6 +684,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		694689C22889B81C00D136B9 /* DataHunter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				694689C32889B81C00D136B9 /* DataHunter.xcdatamodel */,
+			);
+			currentVersion = 694689C32889B81C00D136B9 /* DataHunter.xcdatamodel */;
+			path = DataHunter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 69AEE2B62881100C0089BA09 /* Project object */;
 }

@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct Meow_Hunt_WatchApp: App {
-    var body: some Scene {
+    
+    @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
                 OnboardingView()
+//                    .environment(\.managedObjectContext, dataController.container.viewContext)
 //                TimerView(lapTiming: .init(0), playingActivityOut: .constant(nil), playingActivityIn: .constant(nil))
-            }
+            }.environment(\.managedObjectContext, PersistentController.shared.container.viewContext)
+            
         }
     }
 }

@@ -93,6 +93,7 @@ struct OnboardingView: View {
             .cornerRadius(15)
         }
     }
+    
 }
 
 struct OnboardingView_Previews: PreviewProvider {

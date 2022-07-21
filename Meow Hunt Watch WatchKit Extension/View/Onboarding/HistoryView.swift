@@ -6,38 +6,46 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct HistoryView: View {
+
+    @FetchRequest(entity: Hunting.entity(), sortDescriptors: [])
+//    @FetchRequest(sortDescriptors: [])
+    var dataHunt: FetchedResults<Hunting>
+    
     var body: some View {
-        NavigationView {
-            HStack {
-                List {
-                    HStack{
-                        Image("bookIcon")
-                            .resizable()
-                            .frame(width: 40, height: 35)
-                        
-                        VStack {
-                            HStack {
-                                Text("Read Story Together")
-                                    .font(.system(size: 12))
-                                Spacer()
-                            }.padding(.bottom, 1)
+            VStack {
+                if dataHunt.isEmpty {
+                    Text("No History Found")
+                } else {
+                    List(dataHunt) { item in
+                        HStack{
+                            Image(item.imageActivity ?? "")
+                                .resizable()
+                                .frame(width: 40, height: 35)
                             
-                            HStack {
-                                Text("15:38")
-                                    .font(.system(size: 10))
-                                    .foregroundColor(.yellow).opacity(0.7)
-                                Spacer()
+                            VStack {
+                                HStack {
+                                    Text(item.nameActivity ?? "")
+                                        .font(.system(size: 12))
+                                    Spacer()
+                                }.padding(.bottom, 1)
+
+                                HStack {
+                                    Text(String(item.timeActivity))
+                                        .font(.system(size: 10))
+                                        .foregroundColor(.yellow).opacity(0.7)
+                                    Spacer()
+                                }
+
                             }
-                                
                         }
+
                     }
-                    
+                    .navigationTitle("History")
                 }
-                .navigationTitle("History")
             }
-        }
     }
 }
 

@@ -16,11 +16,17 @@ struct TimeLap: Identifiable {
 }
 
 struct TimerView: View {
+    @Environment(\.managedObjectContext) var context
+    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
+    
     @StateObject var managerClass:StopwatchManager = StopwatchManager()
     @State var lapTiming: TimeLap
     
     @Binding var playingActivityOut : OutdoorActivity?
     @Binding var playingActivityIn : IndoorActivity?
+    
+    @State var isMoving = false
 
     var body: some View {
         VStack {
@@ -47,13 +53,20 @@ struct TimerView: View {
                 
                 Button(action: {
                     lapTiming = TimeLap(managerClass.secondElapsed)
+                    addHistory()
                     self.managerClass.stop()
+                    isMoving.toggle()
                 }, label: {
                     Text("Stop")
                         .foregroundColor(.red)
                 })
                 .buttonStyle(.borderedProminent)
                 .tint(.red.opacity(0.2))
+                .background(
+                    NavigationLink(destination: OnboardingView(), isActive: $isMoving, label: {
+                        
+                    })
+                )
             }
             
             if managerClass.mode == .running {
@@ -68,13 +81,20 @@ struct TimerView: View {
                 
                 Button(action: {
                     lapTiming = TimeLap(managerClass.secondElapsed)
+                    addHistory()
                     self.managerClass.stop()
+                    isMoving.toggle()
                 }, label: {
                     Text("Stop")
                         .foregroundColor(.red)
                 })
                 .buttonStyle(.borderedProminent)
                 .tint(.red.opacity(0.2))
+                .background(
+                    NavigationLink(destination: OnboardingView(), isActive: $isMoving, label: {
+                        
+                    })
+                )
             }
             
             if managerClass.mode == .paused {
@@ -89,19 +109,62 @@ struct TimerView: View {
                 
                 Button(action: {
                     lapTiming = TimeLap(managerClass.secondElapsed)
+                    addHistory()
                     self.managerClass.stop()
+                    isMoving.toggle()
                 }, label: {
                     Text("Stop")
                         .foregroundColor(.red)
                 })
                 .buttonStyle(.borderedProminent)
                 .tint(.red.opacity(0.2))
+                .background(
+                    NavigationLink(destination: OnboardingView(), isActive: $isMoving, label: {
+                        
+                    })
+                )
             }
             Text("\(String(format: "%.2f", lapTiming.lap)) s")
                 .font(.system(size: 10))
         }
+        
         .navigationBarHidden(true)
     }
+    
+    private func addHistory() {
+        let act = Hunting(context: context)
+        act.imageActivity = playingActivityIn?.iconList ?? playingActivityOut?.iconList ?? "other2Icon"
+        act.nameActivity = playingActivityIn?.activityList ?? playingActivityOut?.activityList ?? "Free Activity"
+        act.timeActivity = lapTiming.lap
+        act.timeActivity = Double(round(100 * act.timeActivity) / 100)
+        
+        print(act)
+        print(context)
+        
+        do {
+            try context.save()
+            presentationMode.wrappedValue.dismiss()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+//    func addActivity(){
+//        let data = HistoryHunt(context: moc)
+//        data.imageActivity = playingActivityIn?.iconList ?? playingActivityOut?.iconList ?? "other2Icon"
+//        data.nameActivity = playingActivityIn?.activityList ?? playingActivityOut?.activityList ?? "Free Activity"
+//        data.timeActivity = lapTiming.lap
+//        data.timeActivity = Double(round(100 * data.timeActivity) / 100)
+//
+//        print(data.imageActivity!, data.nameActivity!, data.timeActivity)
+//
+//        do {
+//            try moc.save()
+//            presentation.wrappedValue.dismiss()
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//    }
 }
 
 struct TimerView_Previews: PreviewProvider {
