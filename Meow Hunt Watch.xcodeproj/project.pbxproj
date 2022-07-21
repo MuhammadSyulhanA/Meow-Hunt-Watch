@@ -27,7 +27,6 @@
 		69AEE2D52881100D0089BA09 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEE2D42881100D0089BA09 /* ComplicationController.swift */; };
 		69AEE2D72881100E0089BA09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2D62881100E0089BA09 /* Assets.xcassets */; };
 		69AEE2DA2881100E0089BA09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2D92881100E0089BA09 /* Preview Assets.xcassets */; };
-		98420A562889AC2000ADB16B /* ComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98420A552889AC2000ADB16B /* ComplicationView.swift */; };
 		98420A582889ADF200ADB16B /* ComplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98420A572889ADF200ADB16B /* ComplicationManager.swift */; };
 		98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB128867EA5006C7313 /* IndoorActivityView.swift */; };
 		98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */; };

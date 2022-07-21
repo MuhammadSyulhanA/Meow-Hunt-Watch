@@ -28,7 +28,7 @@ struct OnboardingView: View {
                 .cornerRadius(15)
             }
             
-            NavigationLink(destination: ParentPlayTimeView(timerVal: 3)) {
+            NavigationLink(destination: ParentPlayTimeView(timerVal: 1)) {
                 ZStack {
                     VStack {
                         
@@ -93,7 +93,6 @@ struct OnboardingView: View {
             .cornerRadius(15)
         }
     }
-    
 }
 
 struct OnboardingView_Previews: PreviewProvider {

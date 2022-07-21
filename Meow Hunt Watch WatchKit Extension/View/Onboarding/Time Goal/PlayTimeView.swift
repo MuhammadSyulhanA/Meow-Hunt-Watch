@@ -10,6 +10,11 @@ import SwiftUI
 struct PlayTimeView: View {
     @State private var progress = 0.2
     @State var timerVal : Int
+    
+//    @FetchRequest(entity: Hunting.entity(), sortDescriptors: [])
+////    @FetchRequest(sortDescriptors: [])
+//    var dataHunt: FetchedResults<Hunting>
+//    @State var totalActivity = 0
 
     var body: some View {
         ScrollView {
@@ -26,7 +31,7 @@ struct PlayTimeView: View {
             .padding(10)
             
             HStack {
-                Text("Play Time")
+                Text("Time")
                     .font(.system(size: 13, weight: .semibold))
                 Spacer()
             }
@@ -68,6 +73,7 @@ struct PlayTimeView: View {
 //                }
 //            }
     }
+    
 }
 
 struct PlayTimeView_Previews: PreviewProvider {

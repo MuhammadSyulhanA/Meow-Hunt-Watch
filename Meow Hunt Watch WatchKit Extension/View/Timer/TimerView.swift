@@ -54,6 +54,7 @@ struct TimerView: View {
                 Button(action: {
                     lapTiming = TimeLap(managerClass.secondElapsed)
                     addHistory()
+                    
                     self.managerClass.stop()
                     isMoving.toggle()
                 }, label: {
@@ -82,6 +83,7 @@ struct TimerView: View {
                 Button(action: {
                     lapTiming = TimeLap(managerClass.secondElapsed)
                     addHistory()
+                    
                     self.managerClass.stop()
                     isMoving.toggle()
                 }, label: {
@@ -110,6 +112,7 @@ struct TimerView: View {
                 Button(action: {
                     lapTiming = TimeLap(managerClass.secondElapsed)
                     addHistory()
+                    
                     self.managerClass.stop()
                     isMoving.toggle()
                 }, label: {
@@ -133,7 +136,7 @@ struct TimerView: View {
     
     private func addHistory() {
         let act = Hunting(context: context)
-        act.imageActivity = playingActivityIn?.iconList ?? playingActivityOut?.iconList ?? "other2Icon"
+        act.imageActivity = playingActivityIn?.iconList ?? playingActivityOut?.iconList ?? "otherIcon"
         act.nameActivity = playingActivityIn?.activityList ?? playingActivityOut?.activityList ?? "Free Activity"
         act.timeActivity = lapTiming.lap
         act.timeActivity = Double(round(100 * act.timeActivity) / 100)
@@ -143,28 +146,12 @@ struct TimerView: View {
         
         do {
             try context.save()
-            presentationMode.wrappedValue.dismiss()
+//            presentationMode.wrappedValue.dismiss()
+//            isMoving.toggle()
         } catch {
             print(error.localizedDescription)
         }
     }
-    
-//    func addActivity(){
-//        let data = HistoryHunt(context: moc)
-//        data.imageActivity = playingActivityIn?.iconList ?? playingActivityOut?.iconList ?? "other2Icon"
-//        data.nameActivity = playingActivityIn?.activityList ?? playingActivityOut?.activityList ?? "Free Activity"
-//        data.timeActivity = lapTiming.lap
-//        data.timeActivity = Double(round(100 * data.timeActivity) / 100)
-//
-//        print(data.imageActivity!, data.nameActivity!, data.timeActivity)
-//
-//        do {
-//            try moc.save()
-//            presentation.wrappedValue.dismiss()
-//        } catch {
-//            print(error.localizedDescription)
-//        }
-//    }
 }
 
 struct TimerView_Previews: PreviewProvider {
