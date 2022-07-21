@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6903706E28887E75004F939A /* StopwatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6903706D28887E75004F939A /* StopwatchManager.swift */; };
+		690370712888A08C004F939A /* IndoorActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370702888A08C004F939A /* IndoorActivity.swift */; };
+		690370732888A09C004F939A /* OutdoorActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370722888A09C004F939A /* OutdoorActivity.swift */; };
+		690370752888C9AA004F939A /* PlayTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370742888C9AA004F939A /* PlayTimeView.swift */; };
+		690370772888D2F4004F939A /* ParentPlayTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370762888D2F4004F939A /* ParentPlayTimeView.swift */; };
+		6903707A2888D64C004F939A /* PickTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690370792888D64C004F939A /* PickTimeView.swift */; };
+		6986474A2887CC240078DDA8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698647492887CC240078DDA8 /* OnboardingView.swift */; };
+		6986474E288847990078DDA8 /* PlayTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986474D288847990078DDA8 /* PlayTrackView.swift */; };
+		6986475128886A340078DDA8 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986475028886A340078DDA8 /* HistoryView.swift */; };
+		6986475328886CEB0078DDA8 /* ChangeGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986475228886CEB0078DDA8 /* ChangeGoalView.swift */; };
 		69AEE2C12881100C0089BA09 /* Meow Hunt Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 69AEE2C02881100C0089BA09 /* Meow Hunt Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		69AEE2C62881100D0089BA09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2C52881100D0089BA09 /* Assets.xcassets */; };
 		69AEE2CC2881100D0089BA09 /* Meow Hunt Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 69AEE2CB2881100D0089BA09 /* Meow Hunt Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -64,6 +74,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6903706D28887E75004F939A /* StopwatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchManager.swift; sourceTree = "<group>"; };
+		690370702888A08C004F939A /* IndoorActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorActivity.swift; sourceTree = "<group>"; };
+		690370722888A09C004F939A /* OutdoorActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorActivity.swift; sourceTree = "<group>"; };
+		690370742888C9AA004F939A /* PlayTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTimeView.swift; sourceTree = "<group>"; };
+		690370762888D2F4004F939A /* ParentPlayTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPlayTimeView.swift; sourceTree = "<group>"; };
+		690370792888D64C004F939A /* PickTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickTimeView.swift; sourceTree = "<group>"; };
+		698647492887CC240078DDA8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		6986474D288847990078DDA8 /* PlayTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTrackView.swift; sourceTree = "<group>"; };
+		6986475028886A340078DDA8 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		6986475228886CEB0078DDA8 /* ChangeGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeGoalView.swift; sourceTree = "<group>"; };
 		69AEE2BC2881100C0089BA09 /* Meow Hunt Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meow Hunt Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AEE2C02881100C0089BA09 /* Meow Hunt Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meow Hunt Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AEE2C52881100D0089BA09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +111,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6903706F28889F9C004F939A /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				69AEE2D02881100D0089BA09 /* ContentView.swift */,
+				98D29BB128867EA5006C7313 /* IndoorActivityView.swift */,
+				98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		690370782888D624004F939A /* Time Goal */ = {
+			isa = PBXGroup;
+			children = (
+				690370762888D2F4004F939A /* ParentPlayTimeView.swift */,
+				690370742888C9AA004F939A /* PlayTimeView.swift */,
+				6986475228886CEB0078DDA8 /* ChangeGoalView.swift */,
+				690370792888D64C004F939A /* PickTimeView.swift */,
+			);
+			path = "Time Goal";
+			sourceTree = "<group>";
+		};
+		698647472887C87E0078DDA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				690370702888A08C004F939A /* IndoorActivity.swift */,
+				690370722888A09C004F939A /* OutdoorActivity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		698647482887CBF80078DDA8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				690370782888D624004F939A /* Time Goal */,
+				698647492887CC240078DDA8 /* OnboardingView.swift */,
+				6986474D288847990078DDA8 /* PlayTrackView.swift */,
+				6986475028886A340078DDA8 /* HistoryView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6986474F28884BEE0078DDA8 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				98D29BBB288721AD006C7313 /* CircleProgressView.swift */,
+				98D29BB728871F15006C7313 /* TimerView.swift */,
+				6903706D28887E75004F939A /* StopwatchManager.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		69AEE2B52881100C0089BA09 = {
 			isa = PBXGroup;
 			children = (
@@ -121,12 +192,8 @@
 		69AEE2CF2881100D0089BA09 /* Meow Hunt Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				698647472887C87E0078DDA8 /* Model */,
 				69AEE2EB288740C60089BA09 /* View */,
-				69AEE2D02881100D0089BA09 /* ContentView.swift */,
-				98D29BB128867EA5006C7313 /* IndoorActivityView.swift */,
-				98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */,
-				98D29BB728871F15006C7313 /* TimerView.swift */,
-				98D29BBB288721AD006C7313 /* CircleProgressView.swift */,
 				69AEE2D22881100D0089BA09 /* Meow_Hunt_WatchApp.swift */,
 				69AEE2D42881100D0089BA09 /* ComplicationController.swift */,
 				69AEE2D62881100E0089BA09 /* Assets.xcassets */,
@@ -147,6 +214,9 @@
 		69AEE2EB288740C60089BA09 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6903706F28889F9C004F939A /* Activity */,
+				6986474F28884BEE0078DDA8 /* Timer */,
+				698647482887CBF80078DDA8 /* Onboarding */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,10 +351,20 @@
 				98D29BB828871F15006C7313 /* TimerView.swift in Sources */,
 				98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */,
 				69AEE2D32881100D0089BA09 /* Meow_Hunt_WatchApp.swift in Sources */,
+				690370752888C9AA004F939A /* PlayTimeView.swift in Sources */,
+				6986474E288847990078DDA8 /* PlayTrackView.swift in Sources */,
+				690370712888A08C004F939A /* IndoorActivity.swift in Sources */,
 				98D29BBC288721AD006C7313 /* CircleProgressView.swift in Sources */,
+				6903706E28887E75004F939A /* StopwatchManager.swift in Sources */,
+				6986475328886CEB0078DDA8 /* ChangeGoalView.swift in Sources */,
 				98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */,
+				6986474A2887CC240078DDA8 /* OnboardingView.swift in Sources */,
+				6986475128886A340078DDA8 /* HistoryView.swift in Sources */,
 				69AEE2D12881100D0089BA09 /* ContentView.swift in Sources */,
+				6903707A2888D64C004F939A /* PickTimeView.swift in Sources */,
+				690370772888D2F4004F939A /* ParentPlayTimeView.swift in Sources */,
 				69AEE2D52881100D0089BA09 /* ComplicationController.swift in Sources */,
+				690370732888A09C004F939A /* OutdoorActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

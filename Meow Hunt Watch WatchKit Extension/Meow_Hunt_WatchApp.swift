@@ -12,7 +12,8 @@ struct Meow_Hunt_WatchApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                OnboardingView()
+//                TimerView(lapTiming: .init(0), playingActivityOut: .constant(nil), playingActivityIn: .constant(nil))
             }
         }
     }

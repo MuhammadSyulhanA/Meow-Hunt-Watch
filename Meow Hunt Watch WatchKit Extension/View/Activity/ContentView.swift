@@ -8,28 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var playActivityOut : OutdoorActivity?
+    @State var playActivityIn : IndoorActivity?
+    
     var body: some View {
-        NavigationView {
+        
             HStack {
                 List {
                     HStack{
                         Image("indoorActivity")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink("Indoor", destination: IndoorActivityView())
+                        NavigationLink("Indoor", destination: IndoorActivityView(playActivity: $playActivityIn))
                     }
                     
                     HStack{
                         Image("outdoorActivity")
                             .resizable()
                             .frame(width: 50, height: 50)
-                        NavigationLink("Outdoor", destination: OutdoorActivityView())
+                        NavigationLink("Outdoor", destination: OutdoorActivityView(playActivity: $playActivityOut))
                     }
                     
                 }
                 .navigationTitle("Activity")
             }
-        }
+        
     }
 }
 

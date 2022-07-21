@@ -7,13 +7,11 @@
 
 import SwiftUI
 
-struct OutdoorActivity: Identifiable {
-    var id = UUID()
-    var iconList: String
-    var activityList: String
-}
-
 struct OutdoorActivityView: View {
+    @Binding var playActivity : OutdoorActivity?
+    @State private var isActivity = false
+    
+    
     var dataList = [
         OutdoorActivity(iconList: "playingIcon", activityList: "Play Games"),
         OutdoorActivity(iconList: "parkIcon", activityList: "Going to Park"),
@@ -38,11 +36,20 @@ struct OutdoorActivityView: View {
                             .frame(width: 40, height: 40)
                         Text(i.activityList)
                     }
+                    .onTapGesture {
+                        playActivity = i
+                        isActivity.toggle()
+                    }
                 }()
                 }
                 .navigationBarTitle("Outdoor")
                 .navigationBarHidden(true)
             }
+            .background(
+                NavigationLink(destination: CircleProgressView(playingActivityOut: $playActivity, playingActivityIn: .constant(nil)), isActive: $isActivity, label: {
+                    
+                })
+            )
         }
     }
 }
@@ -50,6 +57,6 @@ struct OutdoorActivityView: View {
 
 struct OutdoorActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        OutdoorActivityView()
+        OutdoorActivityView(playActivity: .constant(nil))
     }
 }

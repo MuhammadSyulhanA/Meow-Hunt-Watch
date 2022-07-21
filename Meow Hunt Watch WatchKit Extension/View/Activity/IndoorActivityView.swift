@@ -7,13 +7,10 @@
 
 import SwiftUI
 
-struct IndoorActivity: Identifiable {
-    var id = UUID()
-    var iconList: String
-    var activityList: String
-}
-
 struct IndoorActivityView: View {
+    @Binding var playActivity : IndoorActivity?
+    @State private var isActivity = false
+    
     var dataList = [
         IndoorActivity(iconList: "bookIcon", activityList: "Read a Story Together"),
         IndoorActivity(iconList: "singIcon", activityList: "Sing a Song"),
@@ -28,7 +25,7 @@ struct IndoorActivityView: View {
         IndoorActivity(iconList: "other2Icon", activityList: "Other Activity")]
     
     var body: some View {
-        NavigationView {
+
             HStack {
                 List(dataList){ i in{
                     HStack{
@@ -37,17 +34,24 @@ struct IndoorActivityView: View {
                             .frame(width: 40, height: 40)
                         Text(i.activityList)
                     }
+                    .onTapGesture {
+                        playActivity = i
+                        isActivity.toggle()
+                    }
                 }()
                 }
                 .navigationBarTitle("Indoor")
-                .navigationBarHidden(true)
             }
-        }
+            .background(
+                NavigationLink(destination: CircleProgressView(playingActivityOut: .constant(nil), playingActivityIn: $playActivity), isActive: $isActivity, label: {
+                    
+                })
+            )
     }
 }
 
 struct IndoorActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        IndoorActivityView()
+        IndoorActivityView(playActivity: .constant(nil))
     }
 }
