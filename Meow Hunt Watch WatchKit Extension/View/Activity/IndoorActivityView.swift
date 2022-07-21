@@ -16,13 +16,11 @@ struct IndoorActivityView: View {
         IndoorActivity(iconList: "singIcon", activityList: "Sing a Song"),
         IndoorActivity(iconList: "paintingIcon", activityList: "Colouring/Painting"),
         IndoorActivity(iconList: "cookIcon", activityList: "Bake and Cook"),
-        IndoorActivity(iconList: "picnicIcon", activityList: "Indoor Picnic"),
         IndoorActivity(iconList: "puzzleIcon", activityList: "Jigsaw Puzzle"),
         IndoorActivity(iconList: "writeIcon", activityList: "Write A Letter"),
         IndoorActivity(iconList: "wordIcon", activityList: "Word Games"),
-        IndoorActivity(iconList: "sensoryIcon", activityList: "Sensory Bin"),
         IndoorActivity(iconList: "facePaintingIcon", activityList: "Face Painting"),
-        IndoorActivity(iconList: "other2Icon", activityList: "Other Activity")]
+        IndoorActivity(iconList: "otherIcon", activityList: "Other Activity")]
     
     var body: some View {
 

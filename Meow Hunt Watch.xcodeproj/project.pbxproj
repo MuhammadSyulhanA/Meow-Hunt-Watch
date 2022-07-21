@@ -27,6 +27,8 @@
 		69AEE2D52881100D0089BA09 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AEE2D42881100D0089BA09 /* ComplicationController.swift */; };
 		69AEE2D72881100E0089BA09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2D62881100E0089BA09 /* Assets.xcassets */; };
 		69AEE2DA2881100E0089BA09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AEE2D92881100E0089BA09 /* Preview Assets.xcassets */; };
+		98420A562889AC2000ADB16B /* ComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98420A552889AC2000ADB16B /* ComplicationView.swift */; };
+		98420A582889ADF200ADB16B /* ComplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98420A572889ADF200ADB16B /* ComplicationManager.swift */; };
 		98D29BB228867EA5006C7313 /* IndoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB128867EA5006C7313 /* IndoorActivityView.swift */; };
 		98D29BB428867EC5006C7313 /* OutdoorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */; };
 		98D29BB828871F15006C7313 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D29BB728871F15006C7313 /* TimerView.swift */; };
@@ -98,6 +100,8 @@
 		69AEE2D62881100E0089BA09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69AEE2D92881100E0089BA09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69AEE2DB2881100E0089BA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98420A552889AC2000ADB16B /* ComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationView.swift; sourceTree = "<group>"; };
+		98420A572889ADF200ADB16B /* ComplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationManager.swift; sourceTree = "<group>"; };
 		98D29BB128867EA5006C7313 /* IndoorActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorActivityView.swift; sourceTree = "<group>"; };
 		98D29BB328867EC5006C7313 /* OutdoorActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorActivityView.swift; sourceTree = "<group>"; };
 		98D29BB728871F15006C7313 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				694689C22889B81C00D136B9 /* DataHunter.xcdatamodeld */,
 				694689C62889B89800D136B9 /* PersistentController.swift */,
 				69AEE2D42881100D0089BA09 /* ComplicationController.swift */,
+				98420A552889AC2000ADB16B /* ComplicationView.swift */,
+				98420A572889ADF200ADB16B /* ComplicationManager.swift */,
 				69AEE2D62881100E0089BA09 /* Assets.xcassets */,
 				69AEE2DB2881100E0089BA09 /* Info.plist */,
 				69AEE2D82881100E0089BA09 /* Preview Content */,
@@ -372,6 +378,7 @@
 				6903707A2888D64C004F939A /* PickTimeView.swift in Sources */,
 				690370772888D2F4004F939A /* ParentPlayTimeView.swift in Sources */,
 				69AEE2D52881100D0089BA09 /* ComplicationController.swift in Sources */,
+				98420A582889ADF200ADB16B /* ComplicationManager.swift in Sources */,
 				690370732888A09C004F939A /* OutdoorActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

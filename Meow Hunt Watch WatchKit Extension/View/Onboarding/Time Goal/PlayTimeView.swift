@@ -23,6 +23,8 @@ struct PlayTimeView: View {
                     .frame(width: 145, height: 145)
                 .contentShape(Rectangle())
             }
+            .padding(10)
+            
             HStack {
                 Text("Play Time")
                     .font(.system(size: 13, weight: .semibold))
@@ -44,6 +46,19 @@ struct PlayTimeView: View {
                 }
                 Spacer()
             }
+            Button(action: {
+                
+            }, label: {
+                Text("Chance Time Goal")
+                    .foregroundColor(Color(UIColor(red: 0.75, green: 0.57, blue: 0.31, alpha: 1.00)))
+                    .font(.system(size: 17, weight: .semibold))
+                    
+            })
+            .buttonStyle(.borderedProminent)
+            .tint(Color(UIColor(red: 0.26, green: 0.26, blue: 0.27, alpha: 1.00)))
+            .background(
+                NavigationLink("", destination: PickTimeView())
+            )
         }
 //            .onTapGesture {
 //                if progress < 1.0 {
